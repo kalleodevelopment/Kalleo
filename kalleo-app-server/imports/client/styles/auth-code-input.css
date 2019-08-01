@@ -1,0 +1,16 @@
+.auth-code-input__container {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 41.4px;
+}
+
+.auth-code-input__digit {
+  background-color: #e3e5e6;
+  border-radius: 0;
+  text-align: center;
+  width: 17.5%;
+}

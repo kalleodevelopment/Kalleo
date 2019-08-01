@@ -1,0 +1,49 @@
+.verify-auth-code__code-sent,
+.verify-auth-code__go-back-btn,
+.verify-auth-code__send-new-code-btn,
+.verify-auth-code__wrong-number {
+  color: #535353;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.verify-auth-code__code-sent {
+  margin-bottom: 10px;
+}
+
+.verify-auth-code__container {
+  text-align: center;
+}
+
+.verify-auth-code__go-back-btn {
+  background: none;
+  text-decoration: underline;
+}
+
+.verify-auth-code__instructions {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.verify-auth-code__phone-number {
+  font-weight: 600;
+}
+
+.verify-auth-code__send-new-code-btn {
+  background: none;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+}
+
+.verify-auth-code__send-new-code-btn:disabled {
+  text-decoration: none;
+}
+
+.verify-auth-code__wrong-number {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "884010620438",
+    "firebase_url": "https://kalleonative.firebaseio.com",
+    "project_id": "kalleonative",
+    "storage_bucket": "kalleonative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884010620438:android:c9061930c9281c53",
+        "android_client_info": {
+          "package_name": "com.kalleonative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884010620438-mo0r5jjf8v6f5qas7cki6nrvvhqo3j4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kalleonative",
+            "certificate_hash": "7b04e568f2c066381b8ae2d8f8bb13505043074f"
+          }
+        },
+        {
+          "client_id": "884010620438-fo63chav35056reddq5nphb53p2k0rvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU-QLI_FfJ5Mdm9khjdeKJhY7LYJbylC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884010620438-fo63chav35056reddq5nphb53p2k0rvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

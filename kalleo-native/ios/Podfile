@@ -1,0 +1,22 @@
+source 'https://github.com/twilio/cocoapod-specs'
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace 'KalleoNative'
+
+abstract_target 'TwilioVoice' do
+  pod 'TwilioVoice', '2.0.0-beta13'
+  use_frameworks!
+
+  target 'KalleoNative' do
+    platform :ios, '10.3'
+    project 'KalleoNative.xcproject'
+
+    pod 'Analytics', '~> 3.0'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+    pod 'FBSDKShareKit'
+    pod 'Firebase/Core'
+    pod 'Rollbar', '~> 0.2.0'
+  end
+end
+

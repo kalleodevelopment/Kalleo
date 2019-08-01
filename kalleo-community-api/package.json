@@ -1,0 +1,55 @@
+{
+  "name": "kalleo-community-api",
+  "version": "0.0.0",
+  "description": "Kalleo community API",
+  "author": "Poetic Systems",
+  "contributors": [
+    "Evan Corl <evan@poeticsystems.com>",
+    "Chuong Le <chuong@poeticsystems.com",
+    "Kristy Miller <kristy@poeticsystems.com"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poetic/kalleo-community-api"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node build",
+    "dev": "nodemon --exec babel-node src",
+    "build": "babel src --out-dir build",
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "apollo-engine": "^1.1.1",
+    "await-to-js": "^1.0.1",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "csv-parse": "^1.2.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "graphql": "^0.10.5",
+    "graphql-errors": "^2.1.0",
+    "graphql-server-express": "^1.1.0",
+    "graphql-tools": "^1.2.1",
+    "helmet": "^3.12.0",
+    "jwt-mongo-sms": "^2.3.3",
+    "keymirror": "^0.1.1",
+    "mongoose": "^4.11.7",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "rollbar": "^2.2.7",
+    "twilio": "^3.6.2",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.11.0"
+  }
+}

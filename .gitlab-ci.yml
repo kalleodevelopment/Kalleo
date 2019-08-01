@@ -1,0 +1,10 @@
+image: node:latest
+
+stages:
+  - lint
+
+workspace-lint:
+  stage: lint
+  script:
+    - yarn install
+    - yarn run lint

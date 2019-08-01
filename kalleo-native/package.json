@@ -1,0 +1,74 @@
+{
+  "name": "KalleoNative",
+  "description": "React Native client for kalleo app",
+  "version": "0.0.1",
+  "author": "Poetic Systems",
+  "contributors": [
+    "Evan Corl <evan@poeticsystems.com>",
+    "Chuong Le <chuong@poeticsystems.com",
+    "Kristy Miller <kristy@poeticsystems.com"
+  ],
+  "private": true,
+  "scripts": {
+    "android-build-prod": "export ENVFILE=.env.production && cd android && ./gradlew assembleRelease",
+    "android-build-staging": "export ENVFILE=.env.staging && cd android && ./gradlew assembleRelease",
+    "lint": "./node_modules/eslint/bin/eslint.js src/ .",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "await-to-js": "^1.0.1",
+    "awesome-phonenumber": "^2.1.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "deep-equal": "^1.0.1",
+    "faker": "^4.1.0",
+    "keymirror": "^0.1.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "native-base": "^2.3.2",
+    "nodemon": "^1.18.11",
+    "prop-types": "^15.5.10",
+    "react": "16.0.0-alpha.12",
+    "react-apollo": "^1.4.8",
+    "react-native": "0.57.5",
+    "react-native-appsee": "^2.5.11",
+    "react-native-config": "^0.5.0",
+    "react-native-contacts": "^4.0.1",
+    "react-native-extended-stylesheet": "^0.6.0",
+    "react-native-fbsdk": "0.6.3",
+    "react-native-firebase-analytics": "^4.0.1",
+    "react-native-immediate-phone-call": "^0.2.0",
+    "react-native-modal": "^3.1.0",
+    "react-native-permissions": "^1.0.1",
+    "react-native-push-notification": "^3.0.0",
+    "react-native-responsive-image": "^2.1.0",
+    "react-native-segment-io-analytics": "0.0.6",
+    "react-native-swipeable": "^0.6.0",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "subscriptions-transport-ws": "^0.8.2"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/fonts"
+    ]
+  }
+}

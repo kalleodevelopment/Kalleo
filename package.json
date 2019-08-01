@@ -1,0 +1,65 @@
+{
+  "name": "kalleo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Take back your phone. Secure. Identify. Block.",
+  "scripts": {
+    "build:android-production": "cd kalleo-native && cd android && ./gradlew assembleRelease",
+    "clean:android": "cd kalleo-native && cd android && ./gradlew clean",
+    "deploy:community-production": "git subtree push --prefix kalleo-community-api production-kalleo-community-api master",
+    "deploy:community-staging": "git subtree push --prefix kalleo-community-api staging-kalleo-community-api master",
+    "deploy:meteor-production": "git subtree push --prefix kalleo-app-server production-kalleo-app-server master",
+    "deploy:meteor-staging": "git subtree push --prefix kalleo-app-server staging-kalleo-app-server master",
+    "install:community": "cd kalleo-community-api && yarn",
+    "install:meteor": "cd kalleo-app-server && npm install",
+    "install:native": "cd kalleo-native && npm install",
+    "lint": "yarn run lint:native && yarn run lint:meteor && yarn run lint:community",
+    "lint:community": "cd ./kalleo-community-api && yarn run lint",
+    "lint:meteor": "cd ./kalleo-app-server && npm run lint",
+    "lint:native": "cd ./kalleo-native && npm run lint",
+    "postinstall": "yarn run install:native && yarn run install:meteor && yarn run install:community",
+    "setup": "./setup.sh",
+    "start": "concurrently -n \"METEOR,MONGO,NATIVE,COMMUNITY\" -c \"yellow,blue,green,cyan\" \"npm run start:meteor\" \"mongod\" \"npm run start:native\" \"npm run start:community\"",
+    "start:community": "cd ./kalleo-community-api && npm run dev",
+    "start:meteor": " cd ./kalleo-app-server && npm run dev",
+    "start:native": "cd ./kalleo-native && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "precommit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@git.poetic.io:kalleo/kalleo.git"
+  },
+  "author": "Poetic Systems Kalleo",
+  "contributors": [
+    "Evan Corl <evan@poeticsystems.com>",
+    "Chuong Le <chuong@poeticsystems.com",
+    "Kristy Miller <kristy@poeticsystems.com",
+    "Jacob Jumper <JJumper@kalleoapp.com"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "concurrently": "^3.5.1",
+    "dotenv": "^7.0.0",
+    "mongo": "^0.1.0",
+    "mongojs": "^2.6.0",
+    "nodemon": "^1.18.11",
+    "pre-commit": "^1.2.2",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.4",
+    "react-dom": "^16.8.6",
+    "react-native-appsee": "^2.6.0",
+    "react-native-contacts": "^3.1.5",
+    "watchman": "^1.0.0"
+  }
+}

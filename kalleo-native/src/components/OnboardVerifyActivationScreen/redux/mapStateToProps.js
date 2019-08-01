@@ -1,0 +1,1 @@
+export default ({ activeRoute }) => ({ activeRoute });

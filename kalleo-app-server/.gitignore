@@ -1,0 +1,5 @@
+.env
+settings-dev.json
+settings-prod.json
+settings-staging.json
+node_modules/

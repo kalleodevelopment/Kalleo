@@ -1,0 +1,20 @@
+.registration__container {
+  color: #4a4a4a;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  min-height: 100vh;
+}
+
+.registration__step-container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 375px;
+  padding: 0 37.6px;
+}
